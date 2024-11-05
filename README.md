@@ -1,5 +1,6 @@
-![header](https://capsule-render.vercel.app/api?type=waving&&&color=0:00BCF2,100:2158A8&height=250&width=867.2&section=header&text=요리%20네비게이터&fontSize=40&fontAlignY=40&fontColor=skyblue)
-![1](https://github.com/user-attachments/assets/c4b2a491-73b1-4d96-a51b-e999ba7b4dae)
+![header](https://capsule-render.vercel.app/api?type=waving&&&color=0:00BCF2,100:2158A8&height=250&width=867.2&section=header&text=요리%20네비게이터&fontSize=43&fontAlignY=40&fontColor=skyblue)
+<img src ="https://github.com/user-attachments/assets/c4b2a491-73b1-4d96-a51b-e999ba7b4dae" width="100%" height="100%">
+
 
 ![3](https://github.com/user-attachments/assets/04f946d2-58c4-45c3-bf0d-6e9faf8e8808)
 
