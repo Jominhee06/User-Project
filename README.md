@@ -2,7 +2,7 @@
 
 # 메인 페이지 및 Card를 이용한 취향 메뉴 추천
 <img src ="https://github.com/user-attachments/assets/c4b2a491-73b1-4d96-a51b-e999ba7b4dae" width="100%" height="90%"> 
-<img src = "https://github.com/user-attachments/assets/d43a99ac-8f9d-445d-a93a-8343edef611c"  width="100%" height="90%"> 
+<img src = "https://github.com/user-attachments/assets/d43a99ac-8f9d-445d-a93a-8343edef611c"  width="90%" height="90%"> 
 
 
 - 레시피를 직접 작성하고 계절마다 추천하는 레시피와 메뉴를 볼 수 있으며 카테고리 별로 확인도 가능합니다.
