@@ -10,11 +10,11 @@
 - 다국어 지원으로 영어도 가능하고 한국어도 가능합니다.
 - 소셜 미디어 링크를 연결하여 추천하는 음식이 있으면 많은 사람들에게도 공유를 합니다.
 
-## MongoDB를 이용한 데이터 저장
-# 첫번째 
+# MongoDB를 이용한 데이터 저장
+## 첫번째 
 <img src = "https://github.com/user-attachments/assets/4b7af60a-3b98-4fbb-8362-dfc601a37ae2" width="100%" height="100%">
 
-# 두번째 
+## 두번째 
 <img src = "https://github.com/user-attachments/assets/4a1d713e-30a5-46ab-9a2b-f61bb09c3a12" width="100%" height="100%">
 
 - MongoDB를 이용하여 로그인 할 시 로그인 정보를 DB로 저장합니다.
