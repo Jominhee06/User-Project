@@ -1,6 +1,6 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&&&color=0:00BCF2,100:2158A8&height=250&width=867.2&section=header&text=culinary%20navigator&fontSize=43&fontAlignY=40&fontColor=skyblue)
 
-## 메인 페이지 및 Card를 이용한 취향 메뉴 추천
+# 메인 페이지 및 Card를 이용한 취향 메뉴 추천
 <img src ="https://github.com/user-attachments/assets/c4b2a491-73b1-4d96-a51b-e999ba7b4dae" width="100%" height="100%"> 
 <img src = "https://github.com/user-attachments/assets/04f946d2-58c4-45c3-bf0d-6e9faf8e8808" width="100%" height="100%">
 
