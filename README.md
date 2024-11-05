@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&&&color=0:00BCF2,100:2158A8&height=250&width=867.2&section=header&text=요리%20네비게이터&fontSize=43&fontAlignY=40&fontColor=skyblue)
+![header](https://capsule-render.vercel.app/api?type=waving&&&color=0:00BCF2,100:2158A8&height=250&width=867.2&section=header&text=culinary%20navigator&fontSize=43&fontAlignY=40&fontColor=skyblue)
 <img src ="https://github.com/user-attachments/assets/c4b2a491-73b1-4d96-a51b-e999ba7b4dae" width="100%" height="100%">
 
 
