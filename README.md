@@ -1,8 +1,8 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&&&color=0:00BCF2,100:2158A8&height=250&width=867.2&section=header&text=culinary%20navigator&fontSize=43&fontAlignY=40&fontColor=skyblue)
 
 # 메인 페이지 및 Card를 이용한 취향 메뉴 추천
-<img src ="https://github.com/user-attachments/assets/c4b2a491-73b1-4d96-a51b-e999ba7b4dae" width="100%" height="90%"> 
-<img src = "https://github.com/user-attachments/assets/d43a99ac-8f9d-445d-a93a-8343edef611c"  width="90%" height="90%"> 
+<img src ="https://github.com/user-attachments/assets/c4b2a491-73b1-4d96-a51b-e999ba7b4dae" width="90%" height="75%"> 
+<img src = "https://github.com/user-attachments/assets/d43a99ac-8f9d-445d-a93a-8343edef611c"  width="90%" height="75%"> 
 
 
 - 레시피를 직접 작성하고 계절마다 추천하는 레시피와 메뉴를 볼 수 있으며 카테고리 별로 확인도 가능합니다.
