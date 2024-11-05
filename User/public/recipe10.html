@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조개구이 - 요리 네비게이터</title>
+    <link rel="stylesheet" href="style.6.css"> <!-- CSS 파일 링크 -->
+</head>
+<body>
+    <header>
+        <h1>조개구이</h1>
+        <nav>
+            <a href="index.html">홈</a>
+            <a href="recipes.html">레시피 목록</a>
+            <a href="favorites.html">즐겨찾기</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>재료</h2>
+            <ul>
+                <li>신선한 조개 500g</li>
+                <li>소금 약간</li>
+                <li>후추 약간</li>
+                <li>마늘 3쪽 (다진 것)</li>
+                <li>버터 30g</li>
+                <li>레몬 (선택 사항)</li>
+            </ul>
+
+            <h2>조리법</h2>
+            <ol>
+                <li>조개를 깨끗이 씻어 소금을 뿌리고 잠시 둡니다.</li>
+                <li>팬에 버터를 녹이고 다진 마늘을 넣어 볶아 향을 냅니다.</li>
+                <li>씻은 조개를 팬에 넣고 소금과 후추로 간을 합니다.</li>
+                <li>조개가 열리기 시작하면 중불에서 약 5분 정도 조리합니다.</li>
+                <li>조리가 끝난 후 레몬즙을 뿌려서 맛을 더합니다.</li>
+            </ol>
+
+            <h2>팁</h2>
+            <p>조개가 열리지 않으면 신선하지 않은 것이므로, 버리시는 것이 좋습니다. 간장이나 초고추장과 함께 먹으면 더욱 맛있습니다!</p>
+
+            <button onclick="addToFavorites()">즐겨찾기에 추가</button>
+            <script>
+                function addToFavorites() {
+                    alert("레시피가 즐겨찾기에 추가되었습니다!");
+                }
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 personal project.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="style.1.css"> <!-- CSS 파일 경로 -->
+    <script>
+        // 페이지 로드 시 배경 색상을 연두색(#90ee90)로 설정
+        window.onload = function() {
+            document.body.style.backgroundColor = '#90ee90'; // 연두색 배경 설정
+        };
+
+        // 뒤로가기 함수
+        function goBack() {
+            window.history.back();
+        }
+
+        // 로그인 버튼 클릭 시 실행되는 함수
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('loginButton').addEventListener('click', async () => {
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+
+                const response = await fetch('/auth/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ username, password }),
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    alert('로그인 성공!'); // 로그인 성공 메시지
+                    // 로그인 후 리디렉션 (예: 대시보드 페이지)
+                    window.location.href = '/dashboard.html'; 
+                } else {
+                    document.getElementById('errorMessage').textContent = result.message; // 오류 메시지 출력
+                }
+            });
+
+            // 로그아웃 버튼 클릭 시 실행되는 함수
+            document.getElementById('logoutButton').addEventListener('click', async () => {
+                const response = await fetch('/auth/logout', {
+                    method: 'POST',
+                });
+
+                if (response.ok) {
+                    alert('로그아웃 성공!'); // 로그아웃 성공 메시지
+                    window.location.href = '/login.html'; // 로그인 페이지로 리디렉션
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- 좌측 상단의 Back 헤더 -->
+    <header>
+        <button class="back-button" onclick="goBack()">&#9664; back</button>
+    </header>
+
+    <div class="container">
+        <h1>Login</h1>
+        <input type="text" id="username" placeholder="사용자 이름" required />
+        <input type="password" id="password" placeholder="비밀번호" required />
+        <button id="loginButton">login</button>
+        <button id="logoutButton">logout</button>
+        <p id="errorMessage" class="error-message"></p> <!-- 오류 메시지 영역 -->
+    </div>
+
+    <script src="login.js"></script> <!-- 필요한 스크립트 파일 -->
+</body>
+</html>
+
+
+
+

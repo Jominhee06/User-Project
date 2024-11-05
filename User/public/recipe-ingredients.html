@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>재료 입력</title>
+    <link rel="stylesheet" href="style.1.css">
+</head>
+<body>
+    <button onclick="goBack()">&#8592; back</button> <!-- 뒤로가기 버튼 -->
+    <div class="container">
+        <h1>재료 입력</h1>
+        <textarea id="recipeIngredients" placeholder="재료 입력" required></textarea>
+        <button id="nextButton">다음</button>
+    </div>
+
+    <script>
+        window.onload = function() {
+            const savedIngredients = localStorage.getItem('recipeIngredients');
+            if (savedIngredients) {
+                document.getElementById('recipeIngredients').value = savedIngredients;
+            }
+        };
+
+        document.getElementById('nextButton').addEventListener('click', () => {
+            const ingredients = document.getElementById('recipeIngredients').value;
+            if (!ingredients) {
+                alert('재료를 입력하세요.');
+                return;
+            }
+            localStorage.setItem('recipeIngredients', ingredients);
+            window.location.href = 'recipe-instructions.html'; // 조리법 페이지로 이동
+        });
+    </script>
+</body>
+</html>
+
+

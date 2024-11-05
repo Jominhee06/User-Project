@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사과파이 - 요리 네비게이터</title>
+    <link rel="stylesheet" href="style.6.css"> <!-- CSS 파일 링크 -->
+</head>
+<body>
+    <header>
+        <h1>사과파이</h1>
+        <nav>
+            <a href="index.html">홈</a>
+            <a href="recipes.html">레시피 목록</a>
+            <a href="favorites.html">즐겨찾기</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>재료</h2>
+            <ul>
+                <li>사과 4~5개 (그랜니 스미스 또는 후지)</li>
+                <li>설탕 3/4컵</li>
+                <li>계피가루 1작은술</li>
+                <li>레몬즙 1큰술</li>
+                <li>파이 크러스트 (상단과 하단용)</li>
+                <li>버터 2큰술</li>
+                <li>달걀 1개 (물과 섞어 브러시용)</li>
+            </ul>
+
+            <h2>조리법</h2>
+            <ol>
+                <li>오븐을 200도로 예열합니다.</li>
+                <li>사과를 껍질을 벗기고 얇게 썰어줍니다.</li>
+                <li>썬 사과에 설탕, 계피가루, 레몬즙을 넣고 잘 섞습니다.</li>
+                <li>파이 팬에 하단 파이 크러스트를 깔고 사과 혼합물을 올립니다.</li>
+                <li>작은 조각으로 잘라 놓은 버터를 사과 위에 뿌립니다.</li>
+                <li>상단 파이 크러스트로 덮고, 가장자리를 눌러 밀봉합니다.</li>
+                <li>작은 구멍을 만들어 증기가 빠져나가도록 합니다.</li>
+                <li>오븐에서 45~50분 동안 또는 겉면이 황금색이 될 때까지 구워냅니다.</li>
+            </ol>
+
+            <h2>팁</h2>
+            <p>사과파이를 더욱 맛있게 즐기려면 바닐라 아이스크림과 함께 제공하세요!</p>
+
+            <button onclick="addToFavorites()">즐겨찾기에 추가</button>
+            <script>
+                function addToFavorites() {
+                    alert("레시피가 즐겨찾기에 추가되었습니다!");
+                }
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 personal project.</p>
+    </footer>
+</body>
+</html>

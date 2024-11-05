@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레시피 보기</title>
+    <link rel="stylesheet" href="style.2.css"> <!-- CSS 파일 경로 -->
+</head>
+<body>
+    <header>
+        <button class="back-button" onclick="goBack()">&#9664; back</button> <!-- 좌측 상단에 뒤로가기 버튼 -->
+        <h1>레시피 보기</h1>
+    </header>
+
+    <div class="container">
+        <section class="recipe-input">
+            <input type="text" id="recipe-title" placeholder="레시피 제목을 입력하세요" required>
+            <input type="text" id="recipe-description" placeholder="레시피 설명을 입력하세요" required>
+            <button onclick="addRecipe()">레시피 추가</button>
+        </section>
+
+        <section class="recipe-list">
+            <ul id="recipes"></ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 personal project.</p>
+        </footer>
+    </div>
+
+    <script>
+        // 뒤로가기 함수
+        function goBack() {
+            window.history.back();
+        }
+
+        // 페이지 로드 시 저장된 레시피 불러오기
+        document.addEventListener('DOMContentLoaded', loadRecipes);
+
+        // 로컬 스토리지에서 레시피 로드
+        function loadRecipes() {
+            const storedRecipes = JSON.parse(localStorage.getItem('recipes')) || [];
+            storedRecipes.forEach(recipe => {
+                addRecipeToList(recipe.title, recipe.description);
+            });
+        }
+
+        // 로컬 스토리지에 레시피 저장
+        function saveRecipes() {
+            const recipeList = document.getElementById('recipes').children;
+            const recipes = Array.from(recipeList).map(item => {
+                const [title, description] = item.textContent.split(': ');
+                return { title, description };
+            });
+            localStorage.setItem('recipes', JSON.stringify(recipes));
+        }
+
+        // 레시피 추가
+        function addRecipe() {
+            const title = document.getElementById('recipe-title').value;
+            const description = document.getElementById('recipe-description').value;
+
+            if (title.length < 3) {
+                alert('레시피 제목은 최소 3자 이상이어야 합니다.');
+                return;
+            }
+
+            if (description.length < 10) {
+                alert('레시피 설명은 최소 10자 이상이어야 합니다.');
+                return;
+            }
+
+            addRecipeToList(title, description);
+            saveRecipes();
+
+            // 입력란 초기화
+            document.getElementById('recipe-title').value = '';
+            document.getElementById('recipe-description').value = '';
+        }
+
+        // 레시피 목록에 추가
+        function addRecipeToList(title, description) {
+            const recipeList = document.getElementById('recipes');
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `<strong>${title}</strong>: ${description} 
+                        <button onclick="deleteRecipe(this.parentNode)">삭제</button>`;
+            listItem.classList.add('fade-in'); // 애니메이션 추가
+            recipeList.appendChild(listItem);
+        }
+
+        // 레시피 삭제
+        function deleteRecipe(listItem) {
+            listItem.classList.add('deleting'); // 삭제 애니메이션
+            setTimeout(() => {
+                listItem.remove();
+                saveRecipes();
+            }, 500); // 애니메이션 시간 후 삭제
+        }
+    </script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="레시피 공유 사이트로 다양한 요리 레시피를 찾아보고 공유할 수 있습니다.">
+    <title id="siteTitle">요리 네비게이터</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSS 파일 링크 -->
+    <script src="main.js" defer></script> <!-- 필요한 스크립트 파일 -->
+</head>
+<body>
+    <div class="container">
+        <!-- 헤더 -->
+        <header class="header">
+            <h1 class="site-title" id="welcomeMessage">요리 네비게이터</h1>
+            <nav class="top-buttons">
+                <a class="top-button" href="login.html" aria-label="로그인" id="loginLink">로그인</a>
+                <a class="top-button" href="register.html" aria-label="회원가입" id="registerLink">회원가입</a>
+                <a class="top-button" href="recipes.html" aria-label="레시피 목록" id="recipesLink">레시피 목록</a>
+                <a class="top-button" href="seasonal_recipes.html" aria-label="시즌별 레시피" id="seasonalRecipesLink">시즌별 레시피</a>
+                <a class="top-button" href="category.html" aria-label="레시피 카테고리" id="categoryLink">레시피 카테고리</a>
+                <a class="top-button" href="favorites.html" aria-label="즐겨찾기" id="favoritesLink">즐겨찾기</a>
+                <a class="top-button" href="Recipe.html" aria-label="레시피 공유" id="Recipe">레시피 공유</a>
+            </nav>
+
+            <!-- 검색 기능 추가 -->
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="레시피 검색" />
+                <button onclick="searchRecipe()">검색</button>
+            </div>
+        </header>
+
+        <!-- 본문 -->
+        <main>
+            <h2 id="welcomeHeader">요리 네비게이터에 오신걸 환영합니다. 많은 관심 부탁드리겟습니다!</h2>
+            <p id="welcomeText">저희 사이트에서 다양한 요리 레시피를 찾아보고, 추천 레시피를 직접 작성할 수 있습니다.</p>
+            <img src="https://cdn.pixabay.com/photo/2023/09/05/12/44/mug-8235059_1280.jpg" alt="레시피" class="welcome-image" loading="lazy">
+
+            <!-- 추천 레시피 섹션 -->
+            <h2 id="featuredRecipesHeader">추천 레시피</h2>
+            <section class="featured-recipes">
+                <div class="recipe-card">
+                    <img src="https://cdn.pixabay.com/photo/2022/12/09/01/39/korean-7644354_1280.jpg" alt="김치찌개" class="recipe-image">
+                    <h3 id="recipe1Title">김치찌개</h3>
+                    <p id="recipe1Description">매콤하고 깊은 맛의 김치찌개입니다.</p>
+                    <button onclick="window.location.href='recipe1.html'">자세히 보기</button>
+                    <button onclick="addToFavorites('김치찌개')">찜하기</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="https://cdn.pixabay.com/photo/2017/07/19/03/13/pot-2517765_1280.jpg" alt="불고기" class="recipe-image">
+                    <h3 id="recipe2Title">불고기</h3>
+                    <p id="recipe2Description">달콤하고 부드러운 불고기입니다.</p>
+                    <button onclick="window.location.href='recipe2.html'">자세히 보기</button>
+                    <button onclick="addToFavorites('불고기')">찜하기</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="https://cdn.pixabay.com/photo/2020/02/28/12/43/bibimbap-4887417_1280.jpg" alt="비빔밥" class="recipe-image">
+                    <h3 id="recipe3Title">비빔밥</h3>
+                    <p id="recipe3Description">신선한 재료로 만든 건강한 비빔밥입니다.</p>
+                    <button onclick="window.location.href='recipe3.html'">자세히 보기</button>
+                    <button onclick="addToFavorites('비빔밥')">찜하기</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="https://media.istockphoto.com/id/1490946210/ko/%EC%82%AC%EC%A7%84/%ED%95%9C%EA%B5%AD-%EC%82%BC%EA%B2%B9%EC%82%B4.jpg?s=612x612&w=0&k=20&c=YYH2SonQGfsHRhRaHDqIQOUnBKPv-ahVTaN6eo6FzV4=" alt="삼겹살" class="recipe-image">
+                    <h3 id="recipe4Title">삼겹살</h3>
+                    <p id="recipe4Description">바삭하고 고소한 삼겹살 구이입니다.</p>
+                    <button onclick="window.location.href='recipe4.html'">자세히 보기</button>
+                    <button onclick="addToFavorites('삼겹살')">찜하기</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="https://i.ytimg.com/vi/4-bN7_fGwv4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDy3cmw8nP-WBqfDtb_vUip1vqbsw" alt="사과파이" class="recipe-image">
+                    <h3 id="recipe4Title">사과파이</h3>
+                    <p id="recipe4Description">사과를 넣어 만든 달콤하고 맛있는 사과파이입니다.</p>
+                    <button onclick="window.location.href='recipe5.html'">자세히 보기</button>
+                    <button onclick="addToFavorites('사과파이')">찜하기</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2016/06/12/42badc24da0e7d186a1bb9b43d62d48e1.jpg" alt="팥빙수" class="recipe-image">
+                    <h3 id="recipe4Title">팥빙수</h3>
+                    <p id="recipe4Description"> 얼음을 갈아 여러가지 재료를 넣어 만든 시원한 팥빙수입니다.</p>
+                    <button onclick="window.location.href='recipe13.html'">자세히 보기</button>
+                    <button onclick="addToFavorites('팥빙수')">찜하기</button>
+                </div>
+                
+            </section>
+            
+            <!-- 소셜 미디어 공유 버튼 -->
+            <section class="social-share">
+                <h2 id="shareHeader">소셜 미디어 공유하기</h2>
+                <div class="social-buttons">
+                    <div class="social-column">
+                        <a href="https://www.twitter.com/intent/tweet?url=현재페이지URL&text=푸드팡에서 요리 레시피를 확인해보세요!" target="_blank" id="twitterLink">Twitter</a>
+                        <a href="https://www.instagram.com/" target="_blank" id="instagramLink">Instagram</a>
+                        <a href="https://www.tiktok.com/share?url=https://example.com/my-recipe" target="_blank" id="tiktokLink">TikTok</a>
+                    </div>
+                    <div class="social-column">
+                        <p id="instagramText">인스타그램에서 스토리나 피드에 공유하려면 이미지를 저장하고 직접 업로드하세요!</p>
+                    </div>
+                    <!-- 다크 모드 토글 버튼 -->
+                    <button id="darkModeToggle">다크 모드</button>
+                    <button onclick="switchLanguage('ko')">한국어</button>
+                    <button onclick="switchLanguage('en')">English</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- 푸터 -->
+        <footer>
+            <p>&copy; 2024 personal project.</p> <!-- 저작권 정보 -->
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // 다크 모드 토글 기능
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        darkModeToggle.addEventListener("click", function() {
+            document.body.classList.toggle("dark-mode");
+        });
+
+        // 검색 기능
+        function searchRecipe() {
+            const query = document.getElementById('search').value;
+            if (query) {
+                window.location.href = `recipes.html?search=${query}`;
+            }
+        }
+
+        // 즐겨찾기 추가 기능
+        const favorites = [];
+
+        function addToFavorites(recipe) {
+            if (!favorites.includes(recipe)) {
+                favorites.push(recipe);
+                alert(recipe + "이(가) 즐겨찾기에 추가되었습니다!");
+            } else {
+                alert(recipe + "은(는) 이미 즐겨찾기에 추가되었습니다.");
+            }
+        }
+
+        // 레시피 추가 기능
+        function addRecipe(event) {
+            event.preventDefault(); // 기본 폼 제출 방지
+            const title = document.getElementById('title').value;
+            const ingredients = document.getElementById('ingredients').value;
+            const instructions = document.getElementById('instructions').value;
+            const recipeImage = document.getElementById('recipeImage').files[0];
+
+            // 레시피를 추가하는 코드 (서버와 연동 필요)
+            alert(`레시피 "${title}"이(가) 추가되었습니다!`);
+            document.getElementById('recipeForm').reset(); // 폼 초기화
+        }
+
+        // 언어 전환 기능
+        function switchLanguage(lang) {
+            if (lang === 'en') {
+                document.getElementById('siteTitle').innerText = 'Cooking Navigator';
+                document.getElementById("welcomeMessage").innerText = 'Cooking Navigator';
+                document.getElementById('welcomeHeader').innerText = 'Welcome to Cooking Navigator! Thank you for your interest!';
+                document.getElementById('welcomeText').innerText = 'On our site, you can find various recipes and share your own recommended recipes.';
+                document.getElementById('recipe1Title').innerText = 'Kimchi Stew';
+                document.getElementById('recipe1Description').innerText = 'A spicy and flavorful recipe for Kimchi Stew.';
+                document.getElementById('recipe2Title').innerText = 'Bulgogi';
+                document.getElementById('recipe2Description').innerText = 'A sweet and tender recipe for Bulgogi.';
+                document.getElementById('recipe3Title').innerText = 'Bibimbap';
+                document.getElementById('recipe3Description').innerText = 'A healthy Bibimbap recipe made with fresh ingredients.';
+                document.getElementById('recipe4Title').innerText = 'Pork Belly';
+                document.getElementById('recipe4Description').innerText = 'A crispy and savory recipe for grilled Pork Belly.';
+                document.getElementById('featuredRecipesHeader').innerText = 'Featured Recipes';
+                document.getElementById('shareHeader').innerText = 'Share on Social Media';
+                document.getElementById('instagramText').innerText = 'To share on Instagram, save the image and upload it manually!';
+                document.getElementById('Recipe').innerText = 'Recipe';
+                document.getElementById('loginLink').innerText = 'Login';
+                document.getElementById('registerLink').innerText = 'Register';
+                document.getElementById('recipesLink').innerText = 'Recipes';
+                document.getElementById('seasonalRecipesLink').innerText = 'Seasonal Recipes';
+                document.getElementById('categoryLink').innerText = 'Category';
+                document.getElementById('favoritesLink').innerText = 'Favorites';
+                document.getElementById("search").innerText = 'search';
+                
+                // 크기 조정
+                const header = document.querySelector('.header');
+                const featuredRecipes = document.querySelector('.featured-recipes');
+                header.classList.add('large-font'); // 헤더 크기 조정
+                featuredRecipes.classList.add('large-box'); // 추천 레시피 박스 크기 조정
+            } else {
+                // 한국어로 복원
+                document.getElementById('siteTitle').innerText = '요리 네비게이터';
+                document.getElementById("welcomeMessage").innerText = '요리 네비게이터';
+                document.getElementById('welcomeHeader').innerText = '요리 네비게이터에 오신걸 환영합니다. 많은 관심 부탁드리겟습니다!';
+                document.getElementById('welcomeText').innerText = '저희 사이트에서 다양한 요리 레시피를 찾아보고, 추천 레시피를 직접 작성할 수 있습니다.';
+                document.getElementById('recipe1Title').innerText = '김치찌개';
+                document.getElementById('recipe1Description').innerText = '매콤하고 깊은 맛의 김치찌개 레시피입니다.';
+                document.getElementById('recipe2Title').innerText = '불고기';
+                document.getElementById('recipe2Description').innerText = '달콤하고 부드러운 불고기 레시피입니다.';
+                document.getElementById('recipe3Title').innerText = '비빔밥';
+                document.getElementById('recipe3Description').innerText = '신선한 재료로 만든 건강한 비빔밥 레시피입니다.';
+                document.getElementById('recipe4Title').innerText = '삼겹살';
+                document.getElementById('recipe4Description').innerText = '바삭하고 고소한 삼겹살 구이 레시피입니다.';
+                document.getElementById('featuredRecipesHeader').innerText = '추천 레시피';
+                document.getElementById('shareHeader').innerText = '소셜 미디어 공유하기';
+                document.getElementById('instagramText').innerText = '인스타그램에서 스토리나 피드에 공유하려면 이미지를 저장하고 직접 업로드하세요!';
+                document.getElementById('Recipe').innerText = '레시피 공유';
+                document.getElementById('loginLink').innerText = '로그인';
+                document.getElementById('registerLink').innerText = '회원가입';
+                document.getElementById('recipesLink').innerText = '레시피 목록';
+                document.getElementById('seasonalRecipesLink').innerText = '시즌별 레시피';
+                document.getElementById('categoryLink').innerText = '레시피 카테고리';
+                document.getElementById('favoritesLink').innerText = '즐겨찾기';
+                document.getElementById('search').innerText = '레시피 검색';
+
+                // 크기 복원
+                const header = document.querySelector('.header');
+                const featuredRecipes = document.querySelector('.featured-recipes');
+                header.classList.remove('large-font'); // 기본 헤더 크기 유지
+                featuredRecipes.classList.remove('large-box'); // 기본 박스 크기 유지
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

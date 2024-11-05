@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오이무침 - 요리 네비게이터</title>
+    <link rel="stylesheet" href="style.6.css"> <!-- CSS 파일 링크 -->
+</head>
+<body>
+    <header>
+        <h1>오이무침</h1>
+        <nav>
+            <a href="index.html">홈</a>
+            <a href="recipes.html">레시피 목록</a>
+            <a href="favorites.html">즐겨찾기</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>재료</h2>
+            <ul>
+                <li>오이 2개</li>
+                <li>다진 마늘 1 작은술</li>
+                <li>고춧가루 1 큰술</li>
+                <li>간장 1 큰술</li>
+                <li>식초 1 큰술</li>
+                <li>설탕 1 작은술</li>
+                <li>소금 약간</li>
+                <li>참기름 1 큰술</li>
+                <li>깨소금 (선택 사항)</li>
+            </ul>
+
+            <h2>조리법</h2>
+            <ol>
+                <li>오이를 깨끗이 씻고, 반으로 갈라서 얇게 썰어줍니다.</li>
+                <li>썰은 오이에 소금을 뿌리고 10분 정도 둡니다. (<strong>수분이 나오도록</strong>)</li>
+                <li>오이에서 나오는 물기를 짜내고, 큰 볼에 오이와 다진 마늘, 고춧가루, 간장, 식초, 설탕, 참기름을 넣고 잘 섞어줍니다.</li>
+                <li>마지막으로 깨소금을 뿌려서 잘 섞어줍니다.</li>
+            </ol>
+
+            <h2>팁</h2>
+            <p>오이무침은 너무 오래 두지 않고 신선하게 먹는 것이 가장 맛있습니다.</p>
+
+            <button onclick="addToFavorites()">즐겨찾기에 추가</button>
+            <script>
+                function addToFavorites() {
+                    alert("레시피가 즐겨찾기에 추가되었습니다!");
+                }
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 personal project.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해물파전 - 요리 네비게이터</title>
+    <link rel="stylesheet" href="style.6.css"> <!-- CSS 파일 링크 -->
+</head>
+<body>
+    <header>
+        <h1>해물파전</h1>
+        <nav>
+            <a href="index.html">홈</a>
+            <a href="recipes.html">레시피 목록</a>
+            <a href="favorites.html">즐겨찾기</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>재료</h2>
+            <ul>
+                <li>부침가루 1컵</li>
+                <li>물 1컵</li>
+                <li>새우 100g</li>
+                <li>오징어 100g</li>
+                <li>홍고추 1개</li>
+                <li>청양고추 1개</li>
+                <li>대파 1대</li>
+                <li>소금 약간</li>
+                <li>식용유 적당량</li>
+            </ul>
+
+            <h2>조리법</h2>
+            <ol>
+                <li>부침가루와 물을 섞어 반죽을 만듭니다.</li>
+                <li>새우와 오징어를 적당한 크기로 썰고, 홍고추와 청양고추, 대파도 썰어 준비합니다.</li>
+                <li>반죽에 해산물과 채소를 넣고 잘 섞어줍니다.</li>
+                <li>팬에 식용유를 두르고, 반죽을 얇게 펴서 노릇하게 구워줍니다.</li>
+                <li>한 쪽 면이 노릇하게 익으면 뒤집어서 다른 쪽 면도 구워줍니다.</li>
+            </ol>
+
+            <h2>팁</h2>
+            <p>해물은 기호에 따라 다른 재료를 추가해도 좋습니다. 맥주와 함께 먹으면 더욱 맛있습니다!</p>
+
+            <button onclick="addToFavorites()">즐겨찾기에 추가</button>
+            <script>
+                function addToFavorites() {
+                    alert("레시피가 즐겨찾기에 추가되었습니다!");
+                }
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 personal project.</p>
+    </footer>
+</body>
+</html>

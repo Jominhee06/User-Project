@@ -1,0 +1,275 @@
+/* 전역 스타일 */
+* {
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* 전체적인 body 스타일 */
+body {
+    font-family: 'Georgia', sans-serif;
+    background-color: #90ee90; /* 민트색 배경 */
+    color: #333;
+    line-height: 1.6;
+    padding: 0; /* 패딩 없음 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 가운데 정렬 */
+    min-height: 70vh; /* 최소 높이를 100vh로 설정 */
+    width: 70%; /* 전체 너비 */
+}
+
+/* main 스타일 */
+main {
+    flex: 1; /* 나머지 공간을 차지하도록 설정 */
+    padding: 40px; /* 내부 여백 추가 */
+}
+
+/* section 스타일 */
+section {
+    max-width: 800px; /* 최대 너비 설정 */
+    margin: 30px; /* 중앙 정렬 */
+    margin-top: -10px; /* 헤더와의 간격을 조정합니다 (필요에 따라 값 조정) */
+}
+
+/* 카드 스타일 */
+.card {
+    background-color: #fff; /* 카드 배경색 */
+    padding: 20px; /* 내부 여백 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    margin: 20px 0; /* 카드 간의 간격 */
+    transition: transform 0.3s; /* 애니메이션 효과 */
+}
+
+/* 카드 호버 효과 */
+.card:hover {
+    transform: scale(1.02); /* 카드 확대 효과 */
+}
+
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2 {
+    color: #333; /* 글자 색상을 어두운 회색으로 설정합니다 */
+    margin: 0; /* 기본 마진을 제거합니다 */
+    padding: 10px 0; /* 상하 패딩을 추가합니다 */
+    font-family: 'Verdana', sans-serif; /* 글꼴을 Arial로 설정합니다 */
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #fff;
+    padding: 70px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000; /* 헤더가 다른 요소들 위에 나타나도록 설정합니다 */
+}
+
+/* 추가 스타일 예시 */
+header h1 {
+    margin: 0; /* 기본 마진을 제거합니다 */
+    font-size: 24px; /* 제목 글자 크기를 24px로 설정합니다 */
+    color: #333; /* 제목 글자 색상을 어두운 회색으로 설정합니다 */
+}
+
+header nav {
+    margin-top: 20px; /* 내비게이션 요소 위에 20px의 여백을 추가합니다 */
+}
+
+header nav a {
+    margin: 0 15px; /* 링크 요소 사이에 15px의 여백을 추가합니다 */
+    color: #007BFF; /* 링크 글자 색상을 파란색으로 설정합니다 */
+    text-decoration: none; /* 링크에 밑줄을 제거합니다 */
+}
+
+header nav a:hover {
+    text-decoration: underline; /* 마우스 오버 시 링크에 밑줄을 추가합니다 */
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #fff; /* 배경색을 흰색으로 설정합니다 */
+    padding: 3px; /* 헤더의 내부 여백을 50px로 설정합니다 (오타 수정: '50x'에서 '50px'로 변경) */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 헤더에 그림자 효과를 추가합니다 */
+    text-align: center; /* 텍스트를 중앙에 정렬합니다 */
+    border-radius: 7px; /* 모서리를 둥글게 만듭니다 */
+    max-width: 800px; /* 최대 너비를 800px로 제한하여 너무 넓어지지 않도록 함 */
+    width: 900px; /* 너비를 100%로 설정하여 전체 너비를 차지하게 함 */
+}
+
+header h1 {
+    margin-bottom: -25px; /* 제목 아래에 10px의 마진을 추가합니다 */
+    padding: 0px; /* 헤더의 내부 여백을 50px로 설정합니다 (오타 수정: '50x'에서 '50px'로 변경) */
+    font-size: 40px; /* 제목 글자 크기를 35px로 설정합니다 */
+    color: black; /* 제목 글자 색상을 어두운 회색으로 설정합니다 */
+    font-family: 'Verdana', sans-serif; /* 제목의 글꼴을 Arial로 설정합니다 */
+    text-align: center; /* 제목 텍스트를 중앙에 정렬합니다 */
+    font-weight: bold; /* 제목 글자의 두께를 굵게 설정합니다 */
+}
+
+
+/* 내비게이션 스타일 */
+header nav {
+    margin-top: 30px; /* 내비게이션 요소 위에 20px의 여백을 추가합니다 */
+}
+
+header nav a {
+    margin: 0 10px; /* 링크 요소 사이에 15px의 여백을 추가합니다 */
+    color: #007BFF; /* 링크 글자 색상을 파란색으로 설정합니다 */
+    background-color: greenyellow;
+    text-decoration: none; /* 링크에 밑줄을 제거합니다 */
+    border-radius: 7px; /* 모서리를 둥글게 설정합니다 */
+    font-weight: bold; /* 제목 글자의 두께를 굵게 설정합니다 */
+    font-size: 15px;
+}
+
+header nav a:hover {
+    text-decoration: underline; /* 마우스 오버 시 링크에 밑줄을 추가합니다 */
+}
+
+
+header nav a {
+    margin: 0 15px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+header nav a:hover {
+    color: #007BFF;
+}
+
+/* 섹션 스타일 */
+main {
+    flex: 1;
+    padding: 150px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    margin-top: 5px; /* 헤더와의 간격을 조정합니다 (필요에 따라 값 조정) */
+    width: 900px; /* 너비를 100%로 설정하여 전체 너비를 차지하게 함 */
+}
+
+main h2 {
+        margin: 30px 0; /* 상단과 하단에 각각 30px의 마진을 추가합니다 */
+        font-size: 33px; /* 글자 크기를 30px로 설정합니다 */
+        color: green; /* 글자 색상을 녹색으로 설정합니다 */
+        font-weight: bold; /* 글자를 굵게 설정합니다 */
+        text-align: center; /* 글자를 중앙에 정렬합니다 */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* 글자에 그림자 효과를 추가합니다 */
+        padding: 10px; /* h2 요소 내부에 10px의 여백을 추가합니다 */
+        box-sizing: border-box; /* 패딩과 테두리를 포함하여 요소의 전체 너비와 높이를 계산합니다 */
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1); /* 하단에 연한 검정색 경계선을 추가합니다 */
+        background-color: #f9f9f9; /* 연한 회색 배경색을 추가합니다 */
+        border-radius: 5px; /* 모서리를 둥글게 만듭니다 */
+        transition: background-color 0.3s, color 0.3s; /* 배경색과 글자 색상이 변화할 때 부드러운 애니메이션 효과를 줍니다 */
+        cursor: pointer; /* 마우스 커서를 포인터로 변경합니다 */
+        display: block; /* 블록 요소로 설정하여 너비를 조정할 수 있게 함 */
+        width: 180%; /* 너비를 100%로 설정하여 전체 너비를 차지하게 함 */
+        max-width: 560px; /* 최대 너비를 800px로 제한하여 너무 넓어지지 않도록 함 */
+        margin-left: -70px; /* 좌우 중앙 정렬 */
+        margin-right: 70px; /* 좌우 중앙 정렬 */
+}
+
+main h2:hover {
+    background-color: #e9ecef; /* 마우스를 올렸을 때 배경색을 약간 어두운 색으로 변경합니다 */
+    color: green; /* 마우스를 올렸을 때 글자 색상을 어두운 녹색으로 변경합니다 */
+}
+
+
+
+ul li {
+    margin: 20px 0;
+    font-size: 20px;
+    background-color: #f9f9f9; /* 연한 회색 배경색을 추가합니다 */
+    width: 140%; /* 너비를 100%로 설정하여 전체 너비를 차지하게 함 */
+    margin-left: -70px; /* 좌우 중앙 정렬 */
+    margin-right: 70px; /* 좌우 중앙 정렬 */
+}
+
+/* 버튼 스타일 */
+button {
+    background-color: green; /* 버튼 배경색 */
+    color: white; /* 버튼 글자 색상 */
+    border: none; /* 테두리 없음 */
+    padding: 10px 15px; /* 내부 여백 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    font-size: 15px; /* 글자 크기 */
+    cursor: pointer; /* 커서 포인터로 변경 */
+    margin: 10px; /* 버튼 주변 여백 */
+    position: absolute; /* 절대 위치 설정 */
+    top: 10px; /* 상단에서 10px 위치 */
+    left: 10px; /* 좌측에서 10px 위치 */
+    z-index: 1000; /* 다른 요소 위에 표시 */
+}
+
+
+button:hover {
+    background-color: skyblue;
+}
+
+/* 푸터 스타일 */
+footer {
+    text-align: center; /* 텍스트 중앙 정렬 */
+    padding: 0px; /* 내부 여백 */
+    background-color: greenyellow; /* 배경색 */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    margin-top: -10px; /* 상단 여백 */
+    width: 800px; /* 너비를 100%로 설정하여 전체 화면을 차지하도록 함 */
+    position: relative; /* 부모 요소에 대해 상대적 위치 */
+    left: 0; /* 좌측 끝에 정렬 */
+    border-radius: 5px; /* 모서리 둥글게 */
+}
+
+
+footer p {
+    margin: 5px;
+    color: #555;
+}
+
+/* 카드 스타일 */
+.card {
+    background-color: #ffffff; /* 카드 배경색 */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* 카드 테두리 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    padding: 20px; /* 카드 내부 여백 */
+    margin: 50px 0; /* 카드 간 간격 */
+    transition: transform 0.3s; /* 카드 확대 효과 */
+    width: 140%; /* 너비를 100%로 설정하여 전체 너비를 차지하게 함 */
+    margin-left: -70px; /* 좌우 중앙 정렬 */
+    margin-right: 70px; /* 좌우 중앙 정렬 */
+    font-family: 'Verdana', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.05); /* 마우스를 올렸을 때 카드 확대 */
+}
+
+.card h3 {
+    margin: 0 0 10px; /* 제목 아래에 마진 추가 */
+    font-size: 24px; /* 제목 글자 크기 */
+    color: #333; /* 제목 색상 */
+}
+
+.card p {
+    margin: 0; /* 패러그래프 마진 제거 */
+    font-size: 16px; /* 본문 글자 크기 */
+    color: #666; /* 본문 색상 */
+}

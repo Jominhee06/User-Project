@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="style.5.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button onclick="goBack()">&#9664; back</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>사용자 등록</h1>
+        <input type="text" id="username" placeholder="사용자 이름" required />
+        <input type="password" id="password" placeholder="비밀번호" required />
+        <button id="registerButton">등록</button>
+        <p id="errorMessage" style="color: black; display: none;"></p>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back(); // 이전 페이지로 이동
+        }
+
+        document.getElementById('registerButton').addEventListener('click', async () => {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            const response = await fetch('/auth/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ username, password }),
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+                alert(result.message); // 등록 성공
+                window.location.href = '/login.html'; // 등록 후 로그인 페이지로 리디렉션
+            } else {
+                document.getElementById('errorMessage').textContent = result.message; // 오류 메시지 출력
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팥빙수 - 요리 네비게이터</title>
+    <link rel="stylesheet" href="style.6.css"> <!-- CSS 파일 링크 -->
+</head>
+<body>
+    <header>
+        <h1>팥빙수</h1>
+        <nav>
+            <a href="index.html">홈</a>
+            <a href="recipes.html">레시피 목록</a>
+            <a href="favorites.html">즐겨찾기</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>재료</h2>
+            <ul>
+                <li>찹쌀가루 1컵</li>
+                <li>물 2컵</li>
+                <li>팥 1컵 (삶은 것)</li>
+                <li>설탕 1/2컵</li>
+                <li>연유 1/2컵</li>
+                <li>얼음 4컵 (갈아서)</li>
+                <li>떡 (선택 사항)</li>
+                <li>과일 (예: 딸기, 바나나, 멜론 등) - 선택 사항</li>
+                <li>아이스크림 (선택 사항)</li>
+            </ul>
+
+            <h2>조리법</h2>
+            <ol>
+                <li>찹쌀가루와 물을 섞어 쪄서 떡을 만듭니다. (<strong>소금은 추가하지 않음</strong>)</li>
+                <li>삶은 팥에 설탕을 넣고 잘 섞어줍니다.</li>
+                <li>갈은 얼음을 컵에 담고, 그 위에 팥과 연유를 적당히 올립니다.</li>
+                <li>선택적으로 떡, 과일, 아이스크림을 올려서 마무리합니다.</li>
+            </ol>
+
+            <h2>팁</h2>
+            <p>연유를 추가하는 대신 꿀이나 시럽으로 대체할 수 있습니다.</p>
+
+            <button onclick="addToFavorites()">즐겨찾기에 추가</button>
+            <script>
+                function addToFavorites() {
+                    alert("레시피가 즐겨찾기에 추가되었습니다!");
+                }
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 personal project.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>바닐라 케이크 - 요리 네비게이터</title>
+    <link rel="stylesheet" href="style.6.css"> <!-- CSS 파일 링크 -->
+</head>
+<body>
+    <header>
+        <h1>바닐라 케이크</h1>
+        <nav>
+            <a href="index.html">홈</a>
+            <a href="recipes.html">레시피 목록</a>
+            <a href="favorites.html">즐겨찾기</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>재료</h2>
+            <ul>
+                <li>밀가루 2컵</li>
+                <li>설탕 1컵</li>
+                <li>버터 1/2컵 (실온에서 부드럽게)</li>
+                <li>우유 1컵</li>
+                <li>계란 2개</li>
+                <li>베이킹 파우더 2티스푼</li>
+                <li>바닐라 추출물 2티스푼</li>
+                <li>소금 1/2티스푼</li>
+            </ul>
+
+            <h2>조리법</h2>
+            <ol>
+                <li>오븐을 180도(350도 화씨)로 예열합니다.</li>
+                <li>큰 그릇에 버터와 설탕을 넣고 부드럽고 크림 상태가 될 때까지 믹서로 섞습니다.</li>
+                <li>계란을 하나씩 추가하며 잘 섞어줍니다.</li>
+                <li>바닐라 추출물을 넣고 다시 섞습니다.</li>
+                <li>밀가루, 베이킹 파우더, 소금을 넣고 가볍게 섞습니다.</li>
+                <li>우유를 조금씩 넣으면서 부드러운 반죽이 되도록 섞습니다.</li>
+                <li>반죽을 기름을 바른 케이크 팬에 붓고, 25-30분간 굽습니다.</li>
+                <li>케이크가 식으면 팬에서 꺼내어 식힙니다.</li>
+            </ol>
+
+            <h2>팁</h2>
+            <p>상단에 생크림이나 과일을 올려서 장식하면 더욱 맛있습니다!</p>
+
+            <button onclick="addToFavorites()">즐겨찾기에 추가</button>
+            <script>
+                function addToFavorites() {
+                    alert("레시피가 즐겨찾기에 추가되었습니다!");
+                }
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 personal project.</p>
+    </footer>
+</body>
+</html>

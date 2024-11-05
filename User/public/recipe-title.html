@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레시피 제목</title>
+    <link rel="stylesheet" href="style.1.css">
+</head>
+<body>
+    <button onclick="goBack()">&#8592; back</button> <!-- 뒤로가기 버튼 -->
+    <div class="container">
+        <h1>레시피 제목</h1>
+        <input type="text" id="recipeTitle" placeholder="레시피 제목 입력" />
+        <button id="nextButton">다음</button>
+    </div>
+
+    <script>
+        document.getElementById('nextButton').addEventListener('click', () => {
+            const title = document.getElementById('recipeTitle').value;
+            localStorage.setItem('recipeTitle', title);
+            window.location.href = 'recipe-category.html'; // 카테고리 페이지로 이동
+        });
+    </script>
+</body>
+</html>
+

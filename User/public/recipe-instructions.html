@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조리법</title>
+    <link rel="stylesheet" href="style.1.css">
+</head>
+<body>
+    <button onclick="goBack()">&#8592; back</button> <!-- 뒤로가기 버튼 -->
+    <div class="container">
+        <h1>조리법</h1>
+        <textarea id="instructions" placeholder="조리법 입력"></textarea>
+        <button id="saveButton">저장</button>
+    </div>
+
+    <script>
+        document.getElementById('saveButton').addEventListener('click', () => {
+            const instructions = document.getElementById('instructions').value;
+            localStorage.setItem('instructions', instructions);
+            alert('레시피가 저장되었습니다.'); // 레시피 저장 알림
+            // 여기에서 서버에 레시피를 저장하는 로직을 추가할 수 있습니다.
+        });
+    </script>
+</body>
+</html>
+

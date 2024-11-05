@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>재료 목록</title>
+    <link rel="stylesheet" href="style4.css"> <!-- CSS 파일 링크 -->
+</head>
+<body>
+    <header>
+        <h1>재료 목록</h1>
+        <nav>
+            <a href="index.html">홈</a>
+            <a href="recipes.html">레시피 목록</a>
+            <a href="favorites.html">즐겨찾기</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>재료 검색</h2>
+            <input type="text" id="ingredientSearch" placeholder="재료를 입력하세요..." oninput="filterIngredients()" />
+        </section>
+
+        <section>
+            <h2>재료</h2>
+            <ul id="ingredientList">
+                <li>삼겹살</li>
+                <li>양파</li>
+                <li>마늘</li>
+                <li>고추</li>
+                <li>상추</li>
+                <li>파</li>
+                <li>소금</li>
+                <li>후추</li>
+                <li>참기름</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>재료 추가</h2>
+            <input type="text" id="newIngredient" placeholder="새로운 재료 입력" />
+            <button onclick="addIngredient()">추가</button>
+            <button onclick="sortIngredients()">정렬</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 personal project.</p>
+    </footer>
+
+    <script>
+        function filterIngredients() {
+            const searchTerm = document.getElementById('ingredientSearch').value.toLowerCase();
+            const ingredients = document.querySelectorAll('#ingredientList li');
+            let found = false; // 검색된 재료가 있는지 확인하기 위한 변수
+
+            ingredients.forEach((ingredient) => {
+                const text = ingredient.textContent.toLowerCase();
+                if (text.includes(searchTerm)) {
+                    ingredient.style.display = ''; // 검색어가 포함된 재료 표시
+                    found = true; // 적어도 하나의 재료가 발견됨
+                } else {
+                    ingredient.style.display = 'none'; // 검색어가 포함되지 않은 재료 숨김
+                }
+            });
+
+            // 모든 재료가 숨겨진 경우 사용자에게 메시지 표시
+            if (!found && searchTerm) {
+                const noResult = document.createElement('li');
+                noResult.textContent = '검색 결과가 없습니다.';
+                noResult.style.color = 'red'; // 오류 메시지 색상
+                ingredients[0].parentElement.appendChild(noResult); // 리스트의 첫 번째 위치에 메시지 추가
+            } else {
+                // "검색 결과가 없습니다." 메시지가 있다면 삭제
+                const noResult = document.querySelector('#ingredientList li[style*="color: red"]');
+                if (noResult) {
+                    noResult.remove();
+                }
+            }
+        }
+
+        function addIngredient() {
+            const newIngredient = document.getElementById('newIngredient').value;
+            if (newIngredient) {
+                const li = document.createElement('li');
+                li.textContent = newIngredient;
+                document.getElementById('ingredientList').appendChild(li);
+                document.getElementById('newIngredient').value = ''; // 입력란 초기화
+            }
+        }
+
+        function sortIngredients() {
+            const list = document.getElementById('ingredientList');
+            const items = Array.from(list.getElementsByTagName('li'));
+            items.sort((a, b) => a.textContent.localeCompare(b.textContent));
+            items.forEach(item => list.appendChild(item)); // 정렬된 항목을 다시 리스트에 추가
+        }
+    </script>
+</body>
+</html>
+
+

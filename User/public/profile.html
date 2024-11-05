@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 프로필</title>
+    <link rel="stylesheet" href="style.5.css"> <!-- 필요 시 CSS 파일 추가 -->
+</head>
+<body>
+    <h1>내 프로필</h1>
+    
+    <p id="username"></p> <!-- 사용자 이름을 표시하는 부분 -->
+    <button onclick="logout()">로그아웃</button>
+
+    <script>
+        // 사용자 프로필 정보를 가져오는 함수
+        async function fetchUserProfile() {
+            const response = await fetch('/auth/user'); // 사용자 정보 API 호출
+            if (response.ok) {
+                const userData = await response.json();
+                document.getElementById('username').textContent = `사용자 이름: ${userData.username}`; // 사용자 이름 표시
+            } else {
+                alert('프로필 정보를 가져오는 데 실패했습니다.'); // 오류 메시지
+                window.location.href = '/login.html'; // 오류 발생 시 로그인 페이지로 리디렉션
+            }
+        }
+
+        // 로그아웃 함수
+        async function logout() {
+            const response = await fetch('/auth/logout', {
+                method: 'POST', // POST 요청
+            });
+
+            if (response.ok) {
+                alert('로그아웃 성공!'); // 로그아웃 성공 메시지
+                window.location.href = '/login.html'; // 로그인 페이지로 리디렉션
+            } else {
+                alert('로그아웃 실패했습니다.'); // 로그아웃 실패 메시지
+            }
+        }
+
+        // 페이지 로드 시 사용자 프로필 정보 가져오기
+        document.addEventListener('DOMContentLoaded', fetchUserProfile);
+    </script>
+</body>
+</html>
+
