@@ -26,7 +26,6 @@
 
 - 평소에 좋아하던 가수에 이미지와 앨범과 노래를 이용해서 갤러리와 해당 가수에 에피소드 및 정보를 통하여 만든 팬 사이트입니다.
 - 갤러리를 만들어 해당하는 페이지에 들어가게되면 음악이 자동으로 재생되어 음악을 들으면서 이미지를 구경할 수 있습니다.
-- 
 
 <img src = "https://github.com/user-attachments/assets/977f63d7-52da-4576-891e-d3d23eae2e84" width="100%" height="100%">
 <img src = "https://github.com/user-attachments/assets/8a953ef1-1980-4c4f-9359-e011d87d5932" width="100%" height="100%">
