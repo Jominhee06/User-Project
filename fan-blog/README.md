@@ -1,1 +1,1 @@
-src = "https://mybox.naver.com/#/my"
+"https://mybox.naver.com/#/my"
