@@ -28,8 +28,8 @@
 - 갤러리를 만들어 해당하는 페이지에 들어가게되면 음악이 자동으로 재생되어 음악을 들으면서 이미지를 구경할 수 있습니다.
 - 
 
-<img src = "https://github.com/user-attachments/assets/977f63d7-52da-4576-891e-d3d23eae2e84" width="100%" height="100%"
-<img src = "https://github.com/user-attachments/assets/8a953ef1-1980-4c4f-9359-e011d87d5932" width="100%" height="100%"
+<img src = "https://github.com/user-attachments/assets/977f63d7-52da-4576-891e-d3d23eae2e84" width="100%" height="100%">
+<img src = "https://github.com/user-attachments/assets/8a953ef1-1980-4c4f-9359-e011d87d5932" width="100%" height="100%">
 
 - 아티스트 페이지에서는 가수 소개와 앨범 모음을 볼 수 있고 앨범을 클릭하면 앨범에 대한 설명과 노래를 들을 수 있습니다.
 - 해당 가수에 에피소드를 통하여 평소에 몰랐던 것과 축하해야 할 것들을 뉴스를 통해 정보를 얻어 개인적으로 관리할 수 있도록 하였습니다.
