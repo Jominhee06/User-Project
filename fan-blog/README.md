@@ -1,8 +1,3 @@
-## 데이터 자료
-"https://mybox.naver.com/#/my"
-- 자료 폴더에 들어가시면 있습니다.
-- 노래와 비디오 자료가 들어있는 폴더 페이지입니다.
-
 # 2. 메인 페이지 및 Card를 이용한 앨범 모음 
 <img src = "https://github.com/user-attachments/assets/ca24faf6-a1eb-47f5-a800-33a8515d426f" width="600px" height="300px">
 <img src = "https://github.com/user-attachments/assets/977f63d7-52da-4576-891e-d3d23eae2e84" width="600px" height="300px">
@@ -23,3 +18,8 @@
  - 팬 전용 콘텐츠 페이지를 생성하여 구독한 사람들만 즐길 수 있는 페이지도 만들었습니다.
  
  - 알림을 통해 최신 콘텐츠가 업데이트되면 알려주는 설정도 만들었습니다.
+
+## 데이터 자료
+"https://mybox.naver.com/#/my"
+- 자료 폴더에 들어가시면 있습니다.
+- 노래와 비디오 자료가 들어있는 폴더 페이지입니다.
