@@ -3,7 +3,7 @@
 - 자료 폴더에 들어가시면 있습니다.
 - 노래와 비디오 자료가 들어있는 폴더 페이지입니다.
 
-# 2. 메인 페이지 및 Card를 이용한 앨범 모음
+# 2. 메인 페이지 및 Card를 이용한 앨범 모음 
 <img src = "https://github.com/user-attachments/assets/ca24faf6-a1eb-47f5-a800-33a8515d426f" width="600px" height="300px">
 <img src = "https://github.com/user-attachments/assets/977f63d7-52da-4576-891e-d3d23eae2e84" width="600px" height="300px">
 <img src = "https://github.com/user-attachments/assets/8a953ef1-1980-4c4f-9359-e011d87d5932" width="600px" height="450px">
