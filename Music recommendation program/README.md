@@ -37,7 +37,7 @@
 - 화면 구성: 이미지 업로드 버튼, 분위기에 맞는 추천 장르와 앨범 리스트, 음악 재생 컨트롤러(재생, 볼륨 조절)등으로 간단하게 구성했습니다.
 - 사용자 흐름: 사용자는 이미지를 업로드하고 추천 리스트를 확인한 후 선호하는 음악을 클릭하여 바로 재생할 수 있습니다.
 
-<img src = "https://github.com/user-attachments/assets/9e89ede2-4476-4a75-a432-0f893093c8f3" width="300px" height="300px">
+<img src = "https://github.com/user-attachments/assets/9e89ede2-4476-4a75-a432-0f893093c8f3" width="800px" height="300px">
 
 ## 프로젝트 구조
 - 구조: 클라이언트 – 서버 모델 없이 단일 애플리케이션으로 구성되어 로컬 환경에서 작동합니다.
