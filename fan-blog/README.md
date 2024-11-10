@@ -21,7 +21,6 @@
 
 ## 서버 및 DB 연결
 <img src = "https://github.com/user-attachments/assets/e108afe8-4b71-4d1b-b326-ea560a6c3b3f" width="600px" height="450px">
-<img src = "https://github.com/user-attachments/assets/d1fa60a2-fe92-4c99-aa7d-bca86a49e4b4" width="600px" height="450px">
 
 - express, node.js를 이용하여 서버를 연결하고 MariaDB에 정보를 저장하여 관리할 수 있도록 하였습니다.
 - 로그인 정보를 관리하기 위해서 postman을 이용하여 DB연결을 하기 위해서 Sequelize 모델과 마이그레이션을 실행하여 파일 확인을 하였습니다.
