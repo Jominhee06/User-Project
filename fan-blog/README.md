@@ -20,7 +20,7 @@
  - 알림을 통해 최신 콘텐츠가 업데이트되면 알려주는 설정도 만들었습니다.
 
 ## 서버 및 DB 연결
-<img src = "https://github.com/user-attachments/assets/e108afe8-4b71-4d1b-b326-ea560a6c3b3f" width="600px" height="400px">
+<img src = "https://github.com/user-attachments/assets/e108afe8-4b71-4d1b-b326-ea560a6c3b3f" width="350px" height="350px">
 <img src = "https://github.com/user-attachments/assets/99861d31-8cc1-4e6f-b9c9-3c47e7934623" width="600px" height="400px" style="float: right; margin-left: 10px;">
  
 - express, node.js를 이용하여 서버를 연결하고 MariaDB에 정보를 저장하여 관리할 수 있도록 하였습니다.
