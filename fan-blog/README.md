@@ -1,5 +1,5 @@
 # 2. 메인 페이지 및 Card를 이용한 앨범 모음 
-<img src="https://github.com/user-attachments/assets/ca24faf6-a1eb-47f5-a800-33a8515d426f" width="300px" height="350px" style="float: left; margin-right: 10px;">
+<img src="https://github.com/user-attachments/assets/ca24faf6-a1eb-47f5-a800-33a8515d426f" width="350px" height="350px" style="float: left; margin-right: 10px;">
 <img src="https://github.com/user-attachments/assets/977f63d7-52da-4576-891e-d3d23eae2e84" width="350px" height="350px" style="float: right; margin-left: 10px;">
 <img src="https://github.com/user-attachments/assets/8a953ef1-1980-4c4f-9359-e011d87d5932" width="300px" height="350px" style="float: right; margin-left: 10px;">
 
