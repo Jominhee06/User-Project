@@ -1,7 +1,7 @@
 # 2. 메인 페이지 및 Card를 이용한 앨범 모음 
-<img src="https://github.com/user-attachments/assets/ca24faf6-a1eb-47f5-a800-33a8515d426f" width="600px" height="300px" style="float: left; margin-right: 10px;">
-<img src="https://github.com/user-attachments/assets/977f63d7-52da-4576-891e-d3d23eae2e84" width="600px" height="300px" style="float: right; margin-left: 10px;">
-<img src="https://github.com/user-attachments/assets/8a953ef1-1980-4c4f-9359-e011d87d5932" width="600px" height="450px" style="float: right; margin-left: 10px;">
+<img src="https://github.com/user-attachments/assets/ca24faf6-a1eb-47f5-a800-33a8515d426f" width="400px" height="300px" style="float: left; margin-right: 10px;">
+<img src="https://github.com/user-attachments/assets/977f63d7-52da-4576-891e-d3d23eae2e84" width="400px" height="300px" style="float: right; margin-left: 10px;">
+<img src="https://github.com/user-attachments/assets/8a953ef1-1980-4c4f-9359-e011d87d5932" width="400px" height="450px" style="float: right; margin-left: 10px;">
 
  - 평소에 좋아하던 가수에 이미지와 앨범과 노래를 이용해서 갤러리와 해당 가수에 에피소드 및 정보를 통하여 만든 팬 사이트입니다.
  
