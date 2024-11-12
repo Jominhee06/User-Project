@@ -42,7 +42,7 @@
 - 데이터베이스의 스키마 변경 시 ORM에서 자동으로 업데이트를 처리할 수 있다.
 
 ## 데이터 자료
-"https://mybox.naver.com/#/my"
+"https://mybox.naver.com/#/my" ,
 "https://console.cloudinary.com/pm/c-eb1cffca75b199b74d0b170fe746fa/media-explorer/project"
 - 자료 폴더에 들어가시면 있습니다.
 - 노래와 비디오 자료가 들어있는 폴더 페이지입니다.
